@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import inspect
-from typing import Any, Callable, Dict, List, Optional
-from pydantic import BaseModel, Field
+from typing import Any, Callable, Dict, List
+from pydantic import BaseModel
 
 class Tool(BaseModel):
     name: str

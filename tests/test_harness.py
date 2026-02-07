@@ -1,4 +1,3 @@
-import pytest
 from codex_agent_harness import Agent, ToolRegistry
 
 def test_tool_registration():
@@ -22,7 +21,7 @@ def test_agent_loop_simulation():
         return ["file1.txt", "file2.txt"]
     
     agent = Agent(registry=registry)
-    result = agent.run("What files are here?")
+    agent.run("What files are here?")
     
     # Check that tool was called
     history = agent.state.history
